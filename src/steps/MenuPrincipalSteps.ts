@@ -21,8 +21,5 @@ export class MenuPrincipalSteps extends BaseSteps {
          this.menuPrincipalPage.validarSeccionTransferencias()
     }
 
-    async generarTarjetaVirtual():Promise<void>{
-        this.menuPrincipalPage.clickSeccionTarjetaVirtual();
-    }
-
+ 
 }

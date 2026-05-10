@@ -5,6 +5,7 @@ import { MenuPrincipalSteps } from '../steps/MenuPrincipalSteps';
 import {UsuarioValido} from "../data/users.json"
 
 import 'dotenv/config' 
+import { TarjetasVirtualesSteps } from '../steps/TarjetasVirtualesSteps';
 
 
 const url = process.env.URL_BANKING ?? ''
@@ -21,9 +22,8 @@ test.beforeAll(async ({browser})=>{
 })
 
 test('Generar Tarjeta Exitosamente', async () => {
-   
-    const menuPrincipalSteps=new MenuPrincipalSteps(page)
-    await menuPrincipalSteps.generarTarjetaVirtual()
+   const tarjetasVirtuales = new TarjetasVirtualesSteps(page)
+   await tarjetasVirtuales.generarTarjetaVirtual()
 })
 
 
