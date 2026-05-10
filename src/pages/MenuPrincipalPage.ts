@@ -72,7 +72,6 @@ export class MenuPrincipalPage extends BasePage{ //locators
   }
 
   async clickSeccionTarjetaVirtual(){
-     this.validarSeccionTarjetaVirtul() 
     this.clickElement(this.seccionTarjetaVirtual)
   }
 
